@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Lego Resale Hobby";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Welcome to My Lego Resale Hobby!</h2>
+        <p>
+            I like to resell and collect Legos. On this site, you’ll learn about how I find rare sets,
+            restore them, and offer them for resale. Whether you're a fellow collector or just curious about the hobby,
+            there's plenty to explore.
+        </p>
+        <p>
+            Below are some images of the best Lego movie out there and what Lego even is:
+        </p>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/images/lego1.jpg" alt="Lego Set 1" class="img-fluid" />
+            </div>
+            <div class="col-md-6">
+                <img src="~/images/lego2.jpg" alt="Lego Set 2" class="img-fluid" />
+            </div>
+        </div>
+        <p class="mt-3">
+            Feel free to navigate to the Tutor Calculator if you want to see how much you’d be charged for a tutoring session
+            about all things Lego resale! (My rate is super high because this is a joke)
+        </p>
+        <p>
+            <a href="@Url.Action("Calculator", "Home")" class="btn btn-primary">Go to Tutor Calculator</a>
+        </p>
+    </div>
+</div>

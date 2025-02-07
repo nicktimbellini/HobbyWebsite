@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Tutor Calculator";
+    // Set your hourly rate here (you can change the number if desired)
+    var hourlyRate = 50;
+}
+
+<h2>Tutor Cost Calculator</h2>
+<p>Enter the number of hours you need tutoring, and calculate your total cost.</p>
+
+<div class="mb-3">
+    <label for="hours" class="form-label">Number of Hours:</label>
+    <input type="number" id="hours" class="form-control" placeholder="Enter hours" />
+</div>
+<div class="mb-3">
+    <label for="rate" class="form-label">Hourly Rate ($):</label>
+    <!-- This field is read-only -->
+    <input type="text" id="rate" class="form-control" value="@hourlyRate" readonly />
+</div>
+<div class="mb-3">
+    <button id="calculate" class="btn btn-success">Calculate Total</button>
+</div>
+<div class="mb-3">
+    <label for="total" class="form-label">Total Cost ($):</label>
+    <input type="text" id="total" class="form-control" readonly />
+</div>
+<p>
+    <a href="@Url.Action("Index", "Home")" class="btn btn-secondary">Back to Home</a>
+</p>
+
+@section Scripts {
+    <!-- Reference our custom calculator JavaScript file -->
+    <script src="~/js/calculator.js"></script>
+}
